@@ -10,8 +10,10 @@
 // Grays
 // -------------------------
 @black:                 #000;
+@blueGray:              #112;
 @grayDarker:            #222;
 @grayDark:              #333;
+@linkGray:              #238;
 @gray:                  #555;
 @grayLight:             #999;
 @grayLighter:           #eee;
@@ -20,15 +22,16 @@
 
 // Accent colors
 // -------------------------
-@blue:                  #049cdb;
-@blueDark:              #0064cd;
+@veryLightBlue:         #ddf;
+@blue:                  #020726;
+@blueDark:              #061a90;
 @green:                 #46a546;
 @red:                   #9d261d;
 @yellow:                #ffc40d;
-@orange:                #f89406;
+@orange:                #DD4814;
 @pink:                  #c3325f;
 @purple:                #7a43b6;
-
+@brown:                 #903a1c;
 
 // Scaffolding
 // -------------------------
@@ -38,24 +41,25 @@
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             @linkGray;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@sansFontFamily:        Verdana, Tahoma, sans-serif;
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
-@baseFontSize:          14px;
+@baseFontSize:          16px;
 @baseFontFamily:        @sansFontFamily;
-@baseLineHeight:        20px;
+@baseLineHeight:        22px;
 @altFontFamily:         @serifFontFamily;
 
-@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
-@headingsFontWeight:    bold;    // instead of browser default, bold
-@headingsColor:         inherit; // empty to use BS default, @textColor
+@headingsFontFamily:    "ArtifikaMedium", Helvtica, Arial, sans-serif;
+// @headingsFontFamily: inherit; // empty to use BS default, @baseFontFamily
+@headingsFontWeight:    normal;    // instead of browser default, bold
+@headingsColor:         @orange; // empty to use BS default, @textColor
 
 
 // Component sizing
@@ -88,7 +92,7 @@
 @btnBackgroundHighlight:            darken(@white, 10%);
 @btnBorder:                         #ccc;
 
-@btnPrimaryBackground:              @linkColor;
+@btnPrimaryBackground:              @orange;
 @btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
 
 @btnInfoBackground:                 #5bc0de;
@@ -223,14 +227,14 @@
 
 // Hero unit
 // -------------------------
-@heroUnitBackground:              @grayLighter;
-@heroUnitHeadingColor:            inherit;
-@heroUnitLeadColor:               inherit;
+@heroUnitBackground:              @blueGray;
+@heroUnitHeadingColor:            @orange;
+@heroUnitLeadColor:               @grayLighter;
 
 
 // Form states and alerts
 // -------------------------
-@warningText:             #c09853;
+@warningText:             @blueGray;
 @warningBackground:       #fcf8e3;
 @warningBorder:           darken(spin(@warningBackground, -10), 3%);
 
